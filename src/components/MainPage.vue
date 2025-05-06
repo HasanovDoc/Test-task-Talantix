@@ -70,6 +70,9 @@ onMounted(() => {
   max-width: 100vw;
   text-align: center;
   padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .posts-filter {
@@ -85,10 +88,17 @@ onMounted(() => {
 .posts-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
 }
 
 .card-item {
   padding: 10px;
+  width: fit-content;
 }
 
 .no-result {

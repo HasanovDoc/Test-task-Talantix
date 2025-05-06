@@ -23,10 +23,15 @@ const props = defineProps({
 <style scoped lang="scss">
 .postCard {
     width: 390px;
-    box-shadow: 0px 0px 8px rgb(214, 214, 214);
+    box-shadow: 0px 0px 8px rgb(104, 103, 103);
     background-color: white;
     padding: 6px;
     text-align: left;
+    border-radius: 3px;
+
+    @media (max-width: 600px) {
+        width: fit-content;
+    }
 }
 
 .header {

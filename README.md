@@ -16,7 +16,6 @@ A Vue.js 3 application for displaying posts from JSONPlaceholder API with author
 
 - **Vue 3** (Composition API with `<script setup>`)
 - **SCSS** for styling
-- **Fetch API** for data retrieval
 - **JSONPlaceholder** as mock API
 
 ## Project setup
