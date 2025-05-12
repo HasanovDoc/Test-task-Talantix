@@ -28,6 +28,12 @@ const props = defineProps({
     padding: 6px;
     text-align: left;
     border-radius: 3px;
+    cursor: pointer;
+    transition: 0.9s;
+
+    &:hover {
+        scale: 1.1;
+    }
 
     @media (max-width: 600px) {
         width: fit-content;
